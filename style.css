@@ -68,3 +68,36 @@ body.dark button {
   background-color: #7db1ff;
   color: #1b2430;
 }
+.container {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.container h1,
+.container .tagline {
+  text-align: center;
+}
+
+.tagline {
+  font-size: 1.15rem;
+  margin-top: -8px;
+}
+
+.container section {
+  margin-top: 28px;
+}
+
+.container h2 {
+  border-bottom: 2px solid #2a6fdb;
+  padding-bottom: 4px;
+}
+
+.container nav,
+.container p:last-of-type {
+  text-align: center;
+}
+
+body.dark .container h2 {
+  border-bottom-color: #7db1ff;
+}
