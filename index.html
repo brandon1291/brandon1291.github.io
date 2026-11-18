@@ -3,23 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My First Web Project</title>
+  <title>Brandon | Web Design and SEO for Businesses</title>
+  <meta name="description" content="Mobile-friendly websites and SEO that help businesses get found on Google and attract more potential clients.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Web Design and SEO for Growing Businesses</h1>
-  <p id="greeting"></p>
-  <p>This is my first web page.</p>
+  <header class="site-header">
+    <a class="brand" href="index.html">Brandon</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-button">Dark mode</button>
+    </nav>
+  </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About me</a>
-  </nav>
+  <main class="wrap">
+    <div class="hero">
+      <div>
+        <h1>Websites that get found, and get clients.</h1>
+        <p>I design fast, mobile-friendly websites and improve their SEO, so more of the right people find your business and get in touch.</p>
+        <div class="actions">
+          <a class="btn" href="#checker">Check your website</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="serp" aria-label="Example search results">
+        <div class="serp-bar">web design for local business</div>
+        <div class="serp-result top">
+          <span class="url">yourbusiness.com</span>
+          <span class="title">Your Business | Services and Contact</span>
+          <p>Clear titles, fast pages, and a site that works on every screen.</p>
+        </div>
+        <div class="serp-result faded"><span class="url">competitor.com</span><span class="title">Competitor Website</span></div>
+        <p class="serp-note">Example of the result I build toward.</p>
+      </div>
+    </div>
 
-  <img src="https://picsum.photos/300/200" alt="A random photo">
+    <section id="services">
+      <h2>What I do</h2>
+      <div class="row"><h3>Web design</h3><p>Clean sites that look sharp and work smoothly on desktop and mobile.</p></div>
+      <div class="row"><h3>SEO</h3><p>Page titles, descriptions, headings, and site structure that help search engines understand and rank your pages.</p></div>
+      <div class="row"><h3>More visitors</h3><p>Content and calls to action that turn clicks into calls, emails, and quote requests.</p></div>
+      <div class="row"><h3>Fixing problems</h3><p>Slow pages, broken mobile layouts, and confusing navigation, found and fixed.</p></div>
+    </section>
 
-  <p><button id="theme-button">Switch to dark mode</button></p>
+    <section>
+      <h2>How we work together</h2>
+      <ol class="steps">
+        <li><strong>Audit.</strong> I review your current site for speed, mobile layout, and SEO gaps.</li>
+        <li><strong>Plan.</strong> We agree on the pages and fixes that matter most for your customers.</li>
+        <li><strong>Build.</strong> I design and develop, testing on desktop and phone.</li>
+        <li><strong>Improve.</strong> We watch what brings in visitors and keep refining.</li>
+      </ol>
+    </section>
 
+    <section id="checker">
+      <h2>Quick website check</h2>
+      <p>Tick everything your website already does.</p>
+      <div class="checker">
+        <label class="check"><input type="checkbox" data-tip="Add a clear page title that includes what you do and where."> Every page has a clear, unique title</label>
+        <label class="check"><input type="checkbox" data-tip="Write a short description for each page so people want to click it in search results."> Every page has a meta description</label>
+        <label class="check"><input type="checkbox" data-tip="Make sure your layout adapts to phones, since most visitors browse on mobile."> It looks good on a phone</label>
+        <label class="check"><input type="checkbox" data-tip="Compress images and remove heavy scripts so pages load in a couple of seconds."> It loads in under 3 seconds</label>
+        <label class="check"><input type="checkbox" data-tip="Add a clear button or phone number on every page so visitors know what to do next."> Visitors can contact you in one click</label>
+        <label class="check"><input type="checkbox" data-tip="Add alt text to images and use headings in order so search engines and screen readers understand the page."> Images have alt text and pages use headings</label>
+        <div class="meter"><div id="score-fill"></div></div>
+        <p id="score-text">Score: 0 of 6</p>
+        <p id="score-tip">Tick the boxes above to see your score.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Want more visitors and clients?</h2>
+      <p>Send me your website and I'll tell you what I'd fix first.</p>
+      <a class="btn" href="mailto:you@example.com">Email me</a>
+    </section>
+  </main>
+
+  <footer>© Brandon · Web design and SEO · <a href="https://github.com/brandon1291">GitHub</a></footer>
   <script src="script.js"></script>
 </body>
 </html>
