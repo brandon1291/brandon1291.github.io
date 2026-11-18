@@ -42,7 +42,38 @@ th { font-family:'Anton',Impact,sans-serif; font-weight:400; letter-spacing:.04e
 
 .gym-footer { background:var(--ink); color:var(--chalk); padding:40px 24px; text-align:center; }
 .gym-footer a { color:var(--chalk); }
+/* Mobile polish */
+.call-bar { display: none; }
 
+@media (max-width: 760px) {
+  .wrap { padding: 0 18px; }
+  body { padding-bottom: 64px; }
+
+  .gym-header { padding: 14px 18px; }
+  .gym-header nav { gap: 2px 18px; }
+  .gym-header nav a { padding: 10px 0; }
+
+  .gym-hero { padding: 44px 0 52px; }
+  .gym-hero p { font-size: 1.1rem; }
+  .gym-btn { display: block; text-align: center; margin-top: 12px; }
+  .gym-btn.outline { margin-left: 0; }
+
+  section.block { padding: 40px 0; }
+  th, td { padding: 10px; }
+
+  .call-bar {
+    display: block;
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    background: var(--red);
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    z-index: 10;
+  }
+}
 @media (max-width:760px) {
   .classes, .plans { grid-template-columns:1fr; }
   .gym-btn.outline { margin-left:0; }
