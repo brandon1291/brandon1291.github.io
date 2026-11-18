@@ -81,3 +81,28 @@ footer { padding:40px 24px; text-align:center; color:var(--muted); border-top:1p
   .check { padding: 12px 0; }
   footer { padding: 32px 18px; }
 }
+/* Smaller and wider on phones */
+@media (max-width: 760px) {
+  body { font-size: 0.95rem; line-height: 1.55; }
+  h1 { font-size: 1.9rem; }
+  h2 { font-size: 1.4rem; }
+  h3 { font-size: 1.1rem; }
+
+  .wrap { padding: 0 12px; }
+  .site-header { padding: 12px; }
+  .brand { font-size: 1.1rem; }
+  .site-header nav { gap: 0 14px; }
+  .site-header nav a { font-size: 0.9rem; }
+
+  section { padding: 28px 0; }
+  .hero { padding: 16px 0 28px; gap: 20px; }
+  .hero p { font-size: 0.95rem; }
+
+  button, .btn { font-size: 0.9rem; padding: 10px 16px; min-height: 40px; }
+  #theme-button { padding: 6px 10px; }
+
+  .serp { padding: 14px; }
+  .checker { padding: 14px; }
+  .row { padding: 12px 0; }
+  footer { padding: 24px 12px; font-size: 0.85rem; }
+}
