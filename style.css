@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  text-align: center;
+  padding: 40px;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #2a6fdb;
+}
+
+a {
+  color: #2a6fdb;
+}
+
+a:hover {
+  color: #1b4fa0;
+}
+
+img {
+  max-width: 100%;
+  width: 300px;
+  border-radius: 12px;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+nav a {
+  margin: 0 12px;
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
+}
