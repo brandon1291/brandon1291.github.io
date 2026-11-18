@@ -63,3 +63,21 @@ footer { padding:40px 24px; text-align:center; color:var(--muted); border-top:1p
   .row { grid-template-columns:1fr; gap:4px; }
 }
 @media (prefers-reduced-motion:reduce) { #score-fill { transition:none; } }
+/* Mobile polish */
+@media (max-width: 760px) {
+  .wrap { padding: 0 18px; }
+  section { padding: 40px 0; }
+
+  .site-header { padding: 14px 18px; }
+  .site-header nav { gap: 2px 18px; }
+  .site-header nav a { padding: 10px 0; }
+
+  .hero { padding: 24px 0 40px; gap: 28px; }
+  .hero p { font-size: 1.05rem; }
+  .hero .actions .btn { flex: 1 1 100%; text-align: center; }
+
+  button, .btn { min-height: 44px; }
+  .checker { padding: 18px; }
+  .check { padding: 12px 0; }
+  footer { padding: 32px 18px; }
+}
