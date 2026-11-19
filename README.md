@@ -2,7 +2,7 @@
 
 A personal website I'm building while learning web development, HTML, CSS, and Git/GitHub. It starts as a simple "Hello, world!" page and keeps evolving as I learn.
 
-**Live site:** https://brandon1291.github.io/my-first-web-project
+**Live site:** https://brandon1291.github.io/
 
 ## About This Project
 
