@@ -1,48 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects | Brandon Web Design and SEO</title>
-  <meta name="description" content="Sample website projects by Brandon, showing mobile-friendly design and SEO for local businesses.">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1D4ED8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231D4ED8'/%3E%3Ctext x='32' y='45' font-size='38' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<title>Projects | Brandon, Web Design and SEO</title>
+<meta name="description" content="Web design and SEO projects by Brandon, with what was done and the results.">
+<link rel="canonical" href="https://brandon1291.github.io/projects.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Projects | Brandon, Web Design and SEO">
+<meta property="og:description" content="Web design and SEO projects, with what was done and the results.">
+<meta property="og:url" content="https://brandon1291.github.io/projects.html">
 </head>
 <body>
-  <header class="site-header">
+<header>
+  <div class="wrap bar">
     <a class="brand" href="index.html">Brandon</a>
-    <nav>
+    <nav aria-label="Main">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="index.html#contact">Contact</a>
-      <button id="theme-button">Dark mode</button>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="seo-quick-fixes.html">Blog</a>
     </nav>
-  </header>
-
-  <main class="wrap about-text">
-    <h1>Projects</h1>
-
-    <section>
-      <h2>Southside Boxing Gym (sample)</h2>
-      <p>A sample website for a fictional local boxing gym. I built it to practice the goal I'd have for any real client: help people searching for classes find the gym and take the next step.</p>
-
-      <h3>The goal</h3>
-      <p>Get beginners in the area to find the gym on Google and book a free first class.</p>
-
-      <h3>What I did</h3>
-      <ul>
-        <li>Wrote a page title and description around what people search for, like boxing classes for beginners in Birmingham.</li>
-        <li>Made a mobile-first layout, since most people look up gyms on their phones. The schedule scrolls sideways on small screens instead of breaking the page.</li>
-        <li>Put a clear call to action at the top and again at the bottom: book your free class.</li>
-        <li>Added local business structured data (schema markup) so search engines can read the gym's address and hours.</li>
-        <li>Listed classes, schedule, and pricing on one page so visitors can decide quickly.</li>
-      </ul>
-
-      <p><a class="btn" href="gym.html">View the sample site</a></p>
-    </section>
-  </main>
-
-  <footer>© Brandon · Web design and SEO · <a href="https://github.com/brandon1291">GitHub</a></footer>
-  <script src="script.js"></script>
+    <button id="theme" type="button" aria-pressed="false">Dark mode</button>
+    <a class="btn" href="index.html#contact">Free review</a>
+  </div>
+</header>
+<main>
+  <section>
+    <div class="wrap">
+      <h1>Projects</h1>
+      <p class="lead">What I built, what I fixed, and what changed.</p>
+      <div class="grid" style="margin-top:32px">
+        <article class="case">
+          <h3>This website</h3>
+          <p>A fast, mobile-friendly site with dark mode, a self-scoring website checker, and SEO basics done properly.</p>
+          <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>SEO</li></ul>
+          <dl>
+            <dt>Problem</dt><dd>Show small business owners what a clear, fast site looks like.</dd>
+            <dt>What I did</dt><dd>Wrote unique titles and descriptions, added structured data, and built for phones first.</dd>
+            <dt>Result</dt><dd>Add your Lighthouse scores here after you run them in Chrome DevTools.</dd>
+          </dl>
+        </article>
+        <article class="case open">
+          <h3>Your project could be here</h3>
+          <p>I'm taking on my next small business project at a reduced rate. In exchange, I'd ask for an honest testimonial and permission to show the before and after.</p>
+          <p><a class="btn" href="index.html#contact">Get a free website review</a></p>
+        </article>
+      </div>
+      <p style="margin-top:32px;color:var(--muted)">When you finish a project, copy a card above and fill in the problem, what you did, and the result. Real numbers (speed score, traffic, calls) make the strongest case studies.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">© <span id="yr">2026</span> Brandon · Web design and SEO · <a href="seo-quick-fixes.html">Blog</a> · <a href="https://github.com/brandon1291">GitHub</a></div>
+</footer>
+<script src="site.js"></script>
 </body>
 </html>
