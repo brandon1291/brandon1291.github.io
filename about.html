@@ -1,51 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Brandon | Web Design and SEO</title>
-  <meta name="description" content="Brandon builds mobile-friendly, search-optimized websites that help companies attract more visitors and potential clients.">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1D4ED8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231D4ED8'/%3E%3Ctext x='32' y='45' font-size='38' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<title>About Brandon | Web Design and SEO for Small Businesses</title>
+<meta name="description" content="Meet Brandon, a web designer who builds fast, mobile-friendly websites and handles SEO for small businesses.">
+<link rel="canonical" href="https://brandon1291.github.io/about.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About Brandon | Web Design and SEO">
+<meta property="og:description" content="Fast, mobile-friendly websites and SEO for small businesses.">
+<meta property="og:url" content="https://brandon1291.github.io/about.html">
 </head>
 <body>
-  <header class="site-header">
+<header>
+  <div class="wrap bar">
     <a class="brand" href="index.html">Brandon</a>
-    <nav>
+    <nav aria-label="Main">
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+      <a href="about.html" aria-current="page">About</a>
       <a href="projects.html">Projects</a>
-      <a href="index.html#contact">Contact</a>
-      <button id="theme-button">Dark mode</button>
+      <a href="seo-quick-fixes.html">Blog</a>
     </nav>
-  </header>
-
-  <main class="wrap about-text">
-    <h1>About Brandon</h1>
-    <p>I build websites that look great on desktop and mobile and are structured to rank well in search engines. I want to help companies that have a website but aren't getting visitors or potential clients from it.</p>
-
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML and CSS: responsive page structure and styling</li>
-        <li>JavaScript: interactive features</li>
-        <li>SEO fundamentals: titles, descriptions, headings, and site structure</li>
-        <li>Git and GitHub: version control and publishing</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>My approach</h2>
-      <p>I start by understanding the business and its customers, then build and improve the site around what brings in the right visitors. I'm growing my skills with every project and looking for chances to apply them for real companies.</p>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:bam80719@gmail.com">you@example.com</a><br>
-      GitHub: <a href="https://github.com/brandon1291">github.com/brandon1291</a></p>
-    </section>
-  </main>
-
-  <footer>© Brandon · Web design and SEO</footer>
-  <script src="script.js"></script>
+    <button id="theme" type="button" aria-pressed="false">Dark mode</button>
+    <a class="btn" href="index.html#contact">Free review</a>
+  </div>
+</header>
+<main>
+  <section>
+    <div class="wrap">
+      <h1>Hi, I'm Brandon.</h1>
+      <p class="lead">I build websites for small businesses and make sure the right customers can find them.</p>
+      <div class="two" style="margin-top:32px">
+        <div>
+          <h2>Why I do this</h2>
+          <p>Most small business sites lose customers for simple reasons: they load slowly, break on phones, or don't say clearly what the business does. Those problems are fixable, and fixing them is what I enjoy most.</p>
+          <p>I keep things plain. You'll get a clear plan, honest advice about what will make a difference, and a site you can understand and update.</p>
+          <p>Edit this page to add your story: where you're based, what got you into web design, and the kinds of businesses you like working with.</p>
+        </div>
+        <ul class="facts">
+          <li><strong>Fast by default</strong><span>Lean pages that load quickly on slow phone connections.</span></li>
+          <li><strong>Mobile first</strong><span>Designed for the phone in your customer's hand, then scaled up.</span></li>
+          <li><strong>SEO built in</strong><span>Titles, descriptions, headings, and structure done right from day one.</span></li>
+          <li><strong>Clear communication</strong><span>Plain-English updates, no jargon, no surprises.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="soft">
+    <div class="wrap">
+      <h2>Tools I work with</h2>
+      <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Pages</li><li>Lighthouse</li><li>Google Search Console</li></ul>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <h2>Let's look at your website</h2>
+      <p>Send me your site and I'll tell you what I'd fix first. It's free.</p>
+      <div class="cta"><a class="btn" href="index.html#contact">Get a free website review</a><a class="btn ghost" href="projects.html">See my projects</a></div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">© <span id="yr">2026</span> Brandon · Web design and SEO · <a href="seo-quick-fixes.html">Blog</a> · <a href="https://github.com/brandon1291">GitHub</a></div>
+</footer>
+<script src="site.js"></script>
 </body>
 </html>
