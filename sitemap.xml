@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <url><loc>https://brandon1291.github.io/my-first-web-project/seo-quick-fixes.html</loc></url>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://brandon1291.github.io/my-first-web-project/</loc></url>
-  <url><loc>https://brandon1291.github.io/my-first-web-project/about.html</loc></url>
-  <url><loc>https://brandon1291.github.io/my-first-web-project/projects.html</loc></url>
+  <url><loc>https://brandon1291.github.io/</loc></url>
+  <url><loc>https://brandon1291.github.io/about.html</loc></url>
+  <url><loc>https://brandon1291.github.io/projects.html</loc></url>
+  <url><loc>https://brandon1291.github.io/seo-quick-fixes.html</loc></url>
 </urlset>
