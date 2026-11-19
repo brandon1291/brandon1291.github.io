@@ -1,104 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Web Design and SEO for Small Businesses in [Your City] | [Your Business Name]</title>
-  <meta name="description" content="[Your Business Name] builds mobile-friendly websites and SEO for small businesses in [Your City]. Get a free website review.">
- <link rel="canonical" href="https://brandon1291.github.io/">
-  <meta property="og:title" content="Web Design and SEO for Small Businesses in [Your City]">
-  <meta property="og:description" content="Mobile-friendly websites and SEO that help local businesses get found and get clients.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://brandon1291.github.io/my-first-web-project/">
-  <link rel="stylesheet" href="style.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "[Your Business Name]",
-    "url": "https://brandon1291.github.io/my-first-web-project/",
-    "description": "Web design and SEO for small businesses.",
-    "email": "bam80719@gmail.com",
-    "areaServed": "[Your City, State]"
-  }
-  </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Design and SEO for Small Businesses | Brandon</title>
+<meta name="description" content="Brandon builds fast, mobile-friendly websites and SEO for small businesses. Get a free website review.">
+<link rel="canonical" href="https://brandon1291.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Web Design and SEO for Small Businesses">
+<meta property="og:description" content="Mobile-friendly websites and SEO that help local businesses get found and get clients.">
+<meta property="og:url" content="https://brandon1291.github.io/">
+<meta name="theme-color" content="#1D4ED8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231D4ED8'/%3E%3Ctext x='32' y='45' font-size='38' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Brandon - Web Design and SEO","url":"https://brandon1291.github.io/","email":"bam80719@gmail.com","description":"Mobile-friendly web design and SEO for small businesses.","sameAs":["https://github.com/brandon1291"]}
+</script>
+<style>
+:root{
+  --bg:#FFFFFF; --soft:#EEF2F7; --ink:#18212F; --muted:#546174; --line:#D6DDE7;
+  --blue:#1D4ED8; --blue-ink:#FFFFFF; --green:#0B7A3E; --bad:#B42318;
+  --font:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+:root[data-theme="dark"]{
+  --bg:#0F1623; --soft:#18212F; --ink:#E8EDF5; --muted:#9AA7BA; --line:#2A3649;
+  --blue:#7AA2FF; --blue-ink:#0F1623; --green:#5ED08F; --bad:#FF8A80;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:1.0625rem;line-height:1.6}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+h1,h2,h3{line-height:1.15;margin:0 0 .5em;letter-spacing:-.02em}
+h1{font-size:clamp(2.2rem,6vw,3.8rem);font-weight:800}
+h2{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:800}
+h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em}
+p{margin:0 0 1em;max-width:62ch}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font:600 1rem var(--font);text-decoration:none;border:2px solid var(--blue);cursor:pointer;background:var(--blue);color:var(--blue-ink)}
+.btn.ghost{background:transparent;color:var(--blue)}
+.btn:hover{filter:brightness(1.1)}
+
+/* header */
+header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:16px;min-height:60px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:1.25rem;text-decoration:none;color:var(--ink);margin-right:auto}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
+nav a:hover{color:var(--blue)}
+#theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:6px 12px;font:600 .85rem var(--font);cursor:pointer}
+.bar .btn{padding:8px 16px;font-size:.9rem}
+
+/* hero */
+.hero{display:grid;gap:40px;align-items:center}
+@media(min-width:860px){.hero{grid-template-columns:1.1fr 1fr}}
+.hero p.lead{font-size:1.2rem;color:var(--muted)}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.serp{display:grid;gap:14px}
+.result{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:var(--bg)}
+.result .tag{display:inline-block;font-size:.8rem;font-weight:600;margin-bottom:6px}
+.result.before .tag{color:var(--bad)}
+.result.after .tag{color:var(--green)}
+.result .url{font-size:.85rem;color:var(--green);margin:0}
+.result .ttl{font-size:1.1rem;color:var(--blue);margin:2px 0 4px;font-weight:600;max-width:none}
+.result .snip{font-size:.92rem;color:var(--muted);margin:0}
+.result.after{border-color:var(--green);box-shadow:0 0 0 3px color-mix(in srgb,var(--green) 18%,transparent)}
+.caption{font-size:.85rem;color:var(--muted);margin:0}
+
+/* services */
+.soft{background:var(--soft)}
+.grid{display:grid;gap:28px}
+@media(min-width:700px){.grid{grid-template-columns:1fr 1fr}}
+.grid h3{border-top:3px solid var(--blue);padding-top:12px}
+.grid p{color:var(--muted);margin:0}
+
+/* process */
+ol.steps{list-style:none;counter-reset:s;padding:0;margin:0;display:grid;gap:20px}
+@media(min-width:860px){ol.steps{grid-template-columns:repeat(4,1fr)}}
+ol.steps li{counter-increment:s;padding-left:46px;position:relative}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;background:var(--blue);color:var(--blue-ink);font-weight:800;display:grid;place-items:center}
+ol.steps strong{display:block}
+ol.steps span{color:var(--muted);font-size:.95rem}
+
+/* checker */
+.check{display:grid;gap:10px;margin:20px 0;padding:0;list-style:none}
+.check label{display:flex;gap:12px;align-items:center;padding:12px 14px;border:1px solid var(--line);border-radius:10px;cursor:pointer;background:var(--bg)}
+.check input{width:20px;height:20px;accent-color:var(--blue);flex:none}
+.check label:has(input:checked){border-color:var(--green)}
+#result{border-left:4px solid var(--blue);padding:4px 0 4px 16px;min-height:4.5em}
+#score{font-size:1.4rem;font-weight:800;margin:0 0 6px}
+#tips{margin:0;padding-left:1.1em;color:var(--muted)}
+
+/* contact */
+form{display:grid;gap:14px;max-width:560px}
+label.f{display:grid;gap:6px;font-weight:600}
+input[type=text],input[type=email],input[type=url],textarea{font:inherit;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);width:100%}
+textarea{min-height:120px;resize:vertical}
+#msg{min-height:1.5em;color:var(--muted);margin:0}
+
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.95rem}
+footer a{color:var(--muted)}
+.hp{position:absolute;left:-9999px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
-  <header class="site-header">
+<header>
+  <div class="wrap bar">
     <a class="brand" href="index.html">Brandon</a>
-    <nav>
+    <nav aria-label="Main">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="projects.html">Projects</a>
-      <a href="#contact">Contact</a>
-      <button id="theme-button">Dark mode</button>
+      <a href="seo-quick-fixes.html">Blog</a>
     </nav>
-  </header>
+    <button id="theme" type="button" aria-pressed="false">Dark mode</button>
+    <a class="btn" href="#contact">Free review</a>
+  </div>
+</header>
 
-  <main class="wrap">
-    <div class="hero">
+<main>
+  <section>
+    <div class="wrap hero">
       <div>
         <h1>Websites that get found, and get clients.</h1>
-        <p>I design fast, mobile-friendly websites and improve their SEO, so more of the right people find your business and get in touch.</p>
-        <div class="actions">
-          <a class="btn" href="#checker">Check your website</a>
-          <a class="btn ghost" href="#contact">Get a free website review</a>
+        <p class="lead">I design fast, mobile-friendly websites and improve their SEO, so more of the right people find your business and get in touch.</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Get a free website review</a>
+          <a class="btn ghost" href="#checker">Check your website</a>
         </div>
       </div>
-      <div class="serp" aria-label="Example search results">
-        <div class="serp-bar">web design for local business</div>
-        <div class="serp-result top">
-          <span class="url">yourbusiness.com</span>
-          <span class="title">Your Business | Services and Contact</span>
-          <p>Clear titles, fast pages, and a site that works on every screen.</p>
+      <div class="serp" aria-label="Example of a search result before and after SEO">
+        <div class="result before">
+          <span class="tag">Before</span>
+          <p class="url">yourbusiness.com</p>
+          <p class="ttl">Home</p>
+          <p class="snip">Welcome to our website. We are a company. Click here to learn more about us and what we do.</p>
         </div>
-        <div class="serp-result faded"><span class="url">competitor.com</span><span class="title">Competitor Website</span></div>
-        <p class="serp-note">Example of the result I build toward.</p>
+        <div class="result after">
+          <span class="tag">After</span>
+          <p class="url">yourbusiness.com › services</p>
+          <p class="ttl">Emergency Plumber Open 24/7 | Your Business</p>
+          <p class="snip">Fast, fair-priced plumbing repairs. Call now for a free quote and same-day service.</p>
+        </div>
+        <p class="caption">Example only. Same business, clearer title and description.</p>
       </div>
     </div>
+  </section>
 
-    <section id="services">
+  <section class="soft" id="services">
+    <div class="wrap">
       <h2>What I do</h2>
-      <div class="row"><h3>Web design</h3><p>Clean sites that look sharp and work smoothly on desktop and mobile.</p></div>
-      <div class="row"><h3>SEO</h3><p>Page titles, descriptions, headings, and site structure that help search engines understand and rank your pages.</p></div>
-      <div class="row"><h3>More visitors</h3><p>Content and calls to action that turn clicks into calls, emails, and quote requests.</p></div>
-      <div class="row"><h3>Fixing problems</h3><p>Slow pages, broken mobile layouts, and confusing navigation, found and fixed.</p></div>
-    </section>
+      <div class="grid">
+        <div><h3>Web design</h3><p>Clean sites that look sharp and work smoothly on desktop and mobile.</p></div>
+        <div><h3>SEO</h3><p>Page titles, descriptions, headings, and site structure that help search engines understand and rank your pages.</p></div>
+        <div><h3>More visitors</h3><p>Content and calls to action that turn clicks into calls, emails, and quote requests.</p></div>
+        <div><h3>Fixing problems</h3><p>Slow pages, broken mobile layouts, and confusing navigation, found and fixed.</p></div>
+      </div>
+    </div>
+  </section>
 
-    <section>
+  <section id="process">
+    <div class="wrap">
       <h2>How we work together</h2>
       <ol class="steps">
-        <li><strong>Audit.</strong> I review your current site for speed, mobile layout, and SEO gaps.</li>
-        <li><strong>Plan.</strong> We agree on the pages and fixes that matter most for your customers.</li>
-        <li><strong>Build.</strong> I design and develop, testing on desktop and phone.</li>
-        <li><strong>Improve.</strong> We watch what brings in visitors and keep refining.</li>
+        <li><strong>Audit</strong><span>I review your site for speed, mobile layout, and SEO gaps.</span></li>
+        <li><strong>Plan</strong><span>We agree on the pages and fixes that matter most to your customers.</span></li>
+        <li><strong>Build</strong><span>I design and develop, testing on desktop and phone.</span></li>
+        <li><strong>Improve</strong><span>We watch what brings in visitors and keep refining.</span></li>
       </ol>
-    </section>
+    </div>
+  </section>
 
-    <section id="checker">
+  <section class="soft" id="checker">
+    <div class="wrap">
       <h2>Quick website check</h2>
       <p>Tick everything your website already does.</p>
-      <div class="checker">
-        <label class="check"><input type="checkbox" data-tip="Add a clear page title that includes what you do and where."> Every page has a clear, unique title</label>
-        <label class="check"><input type="checkbox" data-tip="Write a short description for each page so people want to click it in search results."> Every page has a meta description</label>
-        <label class="check"><input type="checkbox" data-tip="Make sure your layout adapts to phones, since most visitors browse on mobile."> It looks good on a phone</label>
-        <label class="check"><input type="checkbox" data-tip="Compress images and remove heavy scripts so pages load in a couple of seconds."> It loads in under 3 seconds</label>
-        <label class="check"><input type="checkbox" data-tip="Add a clear button or phone number on every page so visitors know what to do next."> Visitors can contact you in one click</label>
-        <label class="check"><input type="checkbox" data-tip="Add alt text to images and use headings in order so search engines and screen readers understand the page."> Images have alt text and pages use headings</label>
-        <div class="meter"><div id="score-fill"></div></div>
-        <p id="score-text">Score: 0 of 6</p>
-        <p id="score-tip">Tick the boxes above to see your score.</p>
+      <ul class="check" id="items">
+        <li><label><input type="checkbox" data-tip="Give every page its own title of about 50-60 characters that says what the page offers."> Every page has a clear, unique title</label></li>
+        <li><label><input type="checkbox" data-tip="Add a meta description of about 150 characters to each page. It's your pitch in search results."> Every page has a meta description</label></li>
+        <li><label><input type="checkbox" data-tip="Test on a real phone. Text should be readable and buttons easy to tap without zooming."> It looks good on a phone</label></li>
+        <li><label><input type="checkbox" data-tip="Compress images, remove unused scripts, and test with PageSpeed Insights."> It loads in under 3 seconds</label></li>
+        <li><label><input type="checkbox" data-tip="Put a tap-to-call number or a contact button where visitors can see it without scrolling."> Visitors can contact you in one click</label></li>
+        <li><label><input type="checkbox" data-tip="Add alt text to images, and use one H1 with H2s below it so pages have a clear outline."> Images have alt text and pages use headings</label></li>
+      </ul>
+      <div id="result" aria-live="polite">
+        <p id="score">Score: 0 of 6</p>
+        <ul id="tips"><li>Tick the boxes above to see your score.</li></ul>
       </div>
-    </section>
+      <p style="margin-top:16px"><a class="btn" href="#contact">Get a free review of my site</a></p>
+    </div>
+  </section>
 
-    <section id="contact">
+  <section id="contact">
+    <div class="wrap">
       <h2>Want more visitors and clients?</h2>
       <p>Send me your website and I'll tell you what I'd fix first.</p>
-  <a class="btn" href="mailto:bam80719@gmail.com">Get your free website review</a>
-    </section>
-  </main>
+      <form id="form" novalidate>
+        <label class="f">Your name <input type="text" id="name" autocomplete="name" required></label>
+        <label class="f">Your email <input type="email" id="email" autocomplete="email" required></label>
+        <label class="f">Your website <input type="url" id="site" placeholder="https://"></label>
+        <label class="f">What do you want help with? <textarea id="note"></textarea></label>
+        <div class="hp" aria-hidden="true"><label>Leave empty <input type="text" id="trap" tabindex="-1" autocomplete="off"></label></div>
+        <button class="btn" type="submit">Send my request</button>
+        <p id="msg" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
 
- <footer>© Brandon · Web design and SEO · <a href="seo-quick-fixes.html">Blog</a> · <a href="https://github.com/brandon1291">GitHub</a></footer>
-  <script src="script.js"></script>
+<footer>
+  <div class="wrap">© <span id="yr">2026</span> Brandon · Web design and SEO · <a href="seo-quick-fixes.html">Blog</a> · <a href="https://github.com/brandon1291">GitHub</a></div>
+</footer>
+
+<script>
+// Theme toggle (remembers choice; falls back to system setting)
+(function(){
+  var root=document.documentElement, btn=document.getElementById('theme'), saved=null;
+  try{saved=localStorage.getItem('theme')}catch(e){}
+  var dark=saved?saved==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;
+  function apply(){
+    root.setAttribute('data-theme',dark?'dark':'light');
+    btn.textContent=dark?'Light mode':'Dark mode';
+    btn.setAttribute('aria-pressed',dark);
+  }
+  btn.addEventListener('click',function(){
+    dark=!dark; apply();
+    try{localStorage.setItem('theme',dark?'dark':'light')}catch(e){}
+  });
+  apply();
+})();
+
+// Website checker with tailored tips
+(function(){
+  var boxes=document.querySelectorAll('#items input'), score=document.getElementById('score'), tips=document.getElementById('tips');
+  function update(){
+    var n=0, t=[];
+    boxes.forEach(function(b){ if(b.checked)n++; else t.push(b.dataset.tip); });
+    score.textContent='Score: '+n+' of '+boxes.length;
+    tips.innerHTML='';
+    var list = n===0 && !t.length ? [] : t;
+    if(n===boxes.length){ list=['Nice work. Your basics are covered. I can still help you go further.']; }
+    else if(n===0){ list=['Tick the boxes above to see your score.']; }
+    list.forEach(function(s){ var li=document.createElement('li'); li.textContent=s; tips.appendChild(li); });
+  }
+  boxes.forEach(function(b){ b.addEventListener('change',update); });
+})();
+
+// Contact form: opens the visitor's email app with the message filled in
+(function(){
+  var f=document.getElementById('form'), m=document.getElementById('msg');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(document.getElementById('trap').value) return;
+    var name=document.getElementById('name').value.trim(),
+        email=document.getElementById('email').value.trim(),
+        site=document.getElementById('site').value.trim(),
+        note=document.getElementById('note').value.trim();
+    if(!name||!/^\S+@\S+\.\S+$/.test(email)){ m.textContent='Enter your name and a valid email address.'; return; }
+    var body='Name: '+name+'\nEmail: '+email+'\nWebsite: '+site+'\n\n'+note;
+    window.location.href='mailto:bam80719@gmail.com?subject='+encodeURIComponent('Website review request from '+name)+'&body='+encodeURIComponent(body);
+    m.textContent='Opening your email app. If nothing opens, email bam80719@gmail.com directly.';
+  });
+})();
+
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
 </body>
 </html>
